@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import Items.ConnectedBy_;
+import Items.Coordinates;
 import Items.Map;
 import Items.Room;
 
@@ -35,7 +36,8 @@ public class Parser {
  
         // read vertices
         for (int v=0; v < adjacentLists.length; v++) {
-            adjacentLists[v] = new Room(sc.next(), null, sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.hasNext());
+        	
+            adjacentLists[v] = new Room(sc.next(), new Coordinates(sc.nextInt(), sc.nextInt()), sc.nextInt(), sc.nextInt(), sc.hasNext());
         }
  
         // read edges
