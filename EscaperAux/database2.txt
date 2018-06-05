@@ -1,0 +1,9 @@
+undirected
+5	
+Room1 10,10, 30, 20, 0 true
+Room2 20,30, 40, 30, 0 true
+Room3 30,40, 20, 40, 0 false
+
+
+Room1 Room2
+Room3 Room1
